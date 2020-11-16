@@ -11,7 +11,7 @@
       // Show the loading indicator.
       $(".loading-dots").toggle();
 
-      fetch('http://localhost:4567/kalx').then(
+      fetch('http://localhost:4567').then(
         (response) => response.text()
       ).then((text) => {
         $tbody = $(text).find("#block-quicktabs-on-air-today-s-music").find("tbody");
